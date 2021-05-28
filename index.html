@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  background-color: #f1f1f1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.icon{
+color: red;
+}
+@media screen and (min-width: 600px) {
+ .icon{
+     display: none;
+ }
+}
+
+
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  padding-left: 40px;
+  padding-top: 30px;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color:gray;
+  font-size:20px;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  text-decoration: line-through 2px red;
+  color: gray;
+}
+
+
+
+.content {
+  margin-left: 300px;
+  padding: 1px 16px;
+  padding-top: 100px;
+  font-size: 65px;
+  font-weight:bold;
+  width:40%;
+ 
+ 
+}
+@media screen and (max-width: 600px) {
+  .content {
+    margin-left:0px;
+    width:100%;
+    font-size: 50px;
+
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  
+}
+.head{
+    font-size: 35px;
+    font-weight:bold;
+    
+}
+@media screen and (max-width: 600px) {
+  .head {
+    
+    
+  }
+  
+}
+
+.side-content{
+   position:relative;
+   float:right;
+   width:15%;
+   padding-right:80px ;
+   margin-top:-130px;
+   padding-bottom: 20px;
+   border-bottom: 3.5px solid red;
+  
+    
+
+}
+@media screen and (max-width: 800px) {
+  .side-content {
+   display: none;
+    
+  }
+  
+}
+.card {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  width:150px;
+  height:180px;
+  padding:10px;
+  margin-right:20px;
+  text-align: center;
+  background-color:white;
+  margin-top:20px;
+  border-radius:10px;
+  }
+  @media screen and (max-width: 600px) {
+  .card {
+      margin-left:5px;
+    margin-right: 12px;
+    padding:0px;
+    width:160px;
+    height: 200px;
+    
+  }
+  
+}
+  .product{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:300px;
+    
+
+  }
+  @media screen and (max-width: 600px) {
+  .product {
+        margin-left:0px;
+        width:100%;
+          
+            }
+  }
+  
+  /* {
+                 width:50%;
+				padding: 20px 0px 0px 0px;
+				padding-left:10px;
+  } */
+
+  .image{
+      margin-top:10px;
+      width:120px;
+      height:120px;
+      border-radius: 100px;
+  }
+  @media screen and (max-width: 600px) {
+  .image {
+
+
+  }
+  
+}
+  .button{
+      background-color: red;
+      width:120px;
+      height:40px;
+      border-radius: 25px;
+      border-color: red;
+      color:white;
+      margin-top:40px;
+      font-size:15px;
+  }
+</style>
+</head>
+<body>
+    <div class="sidebar">
+        <span class="head">Lorem Ipsum</span>
+        <a class="active" href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#cuisine">Cuisine</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#book">Book</a>
+        <button class="button">Cart</button>
+      </div>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#cuisine">Cuisine</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#book">Book</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" class="icon" onclick="openNav()">&#9776; 
+    <i style="position: relative; float: right; color: red;" class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+</span>
+
+
+
+<div class="content"> What are you having for Lunch?</div>
+<div class="side-content">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</div>
+<br>
+<br>
+<div class="product">
+<div class="card "><img src="img/taco.jpg" class="image"><br><h4>Maxican Taco</h4></div>
+<div class="card "><img src="img/pizza.jpg" class="image"><br><h4>Farmhouse Pizza</h4></div>
+<div class="card "><img src="img/burger.jpg" class="image"><br><h4>Chicken Burger</h4></div>
+<div class="card "><img src="img/nachos.jpg" class="image"><br><h4>Loaded Nachos</h4></div>
+<div class="card "><img src="img/hakka.jpg" class="image"><br><h4>Hakka Noodles</h4></div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
